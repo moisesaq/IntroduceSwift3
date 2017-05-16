@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var operatorText: UILabel!
     @IBOutlet weak var operatorSegment: UISegmentedControl!
     
+    @IBOutlet weak var nameCharacter: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,11 +27,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    
-    @IBAction func operateFunction(_ sender: Any) {
-        
     }
     
     @IBAction func operateWIthSegmentController(_ sender: Any) {
@@ -53,6 +50,7 @@ class ViewController: UIViewController {
                 operatorText.text = "/"
             }
         }else{
+            operatorSegment.selectedSegmentIndex = -1
             createAlert(title: "Error", message: "Missing number")
         }
         
@@ -73,6 +71,20 @@ class ViewController: UIViewController {
             alert.dismiss(animated: true, completion: nil)
         }))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func showList(_ sender: Any) {
+        if(nameCharacter.text != ""){
+            performSegue(withIdentifier: "segue", sender: self)
+        }else{
+            createAlert(title: "Error", message: "Missing name character")
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController = segue.destination as! SecondViewController
+        secondViewController.charactersDragonBallZ.append(nameCharacter.text!)
+        
     }
 }
 
