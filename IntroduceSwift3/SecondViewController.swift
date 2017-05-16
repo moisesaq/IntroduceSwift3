@@ -10,7 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var charactersDragonBallZ = ["Goku", "Vegeta", "Trunks", "Gohan", "Piccolo"];
+    var charactersDragonBallZ = DragonBallZ.getListDefault()
+    //["Goku", "Vegeta", "Trunks", "Gohan", "Piccolo"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +29,26 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return (charactersDragonBallZ.count)
+        return charactersDragonBallZ.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = charactersDragonBallZ[indexPath.row]
+        cell.textLabel?.text = charactersDragonBallZ[indexPath.row].getName()
         return(cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = tableView.indexPathForSelectedRow!.row
+        performSegue(withIdentifier: "segueDetail", sender: index)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController{
+            
+            if let index = sender as? Int{
+                destination.dragonB = charactersDragonBallZ[index]
+            }
+        }
     }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8004C1A91ECB323300BFBF26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8004C1A81ECB323300BFBF26 /* DetailViewController.swift */; };
+		8004C1B01ECB33FE00BFBF26 /* buu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AA1ECB33FE00BFBF26 /* buu.png */; };
+		8004C1B11ECB33FE00BFBF26 /* gohan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AB1ECB33FE00BFBF26 /* gohan.png */; };
+		8004C1B21ECB33FE00BFBF26 /* goku.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AC1ECB33FE00BFBF26 /* goku.png */; };
+		8004C1B31ECB33FE00BFBF26 /* piccolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AD1ECB33FE00BFBF26 /* piccolo.png */; };
+		8004C1B41ECB33FE00BFBF26 /* trunks.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AE1ECB33FE00BFBF26 /* trunks.png */; };
+		8004C1B51ECB33FE00BFBF26 /* vegeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AF1ECB33FE00BFBF26 /* vegeta.png */; };
+		8004C1B71ECB399500BFBF26 /* DragonBallZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8004C1B61ECB399500BFBF26 /* DragonBallZ.swift */; };
 		8056868D1EA71868008B8554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056868C1EA71868008B8554 /* AppDelegate.swift */; };
 		8056868F1EA71868008B8554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8056868E1EA71868008B8554 /* ViewController.swift */; };
 		805686921EA71868008B8554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805686901EA71868008B8554 /* Main.storyboard */; };
@@ -36,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8004C1A81ECB323300BFBF26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8004C1AA1ECB33FE00BFBF26 /* buu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buu.png; sourceTree = "<group>"; };
+		8004C1AB1ECB33FE00BFBF26 /* gohan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gohan.png; sourceTree = "<group>"; };
+		8004C1AC1ECB33FE00BFBF26 /* goku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goku.png; sourceTree = "<group>"; };
+		8004C1AD1ECB33FE00BFBF26 /* piccolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piccolo.png; sourceTree = "<group>"; };
+		8004C1AE1ECB33FE00BFBF26 /* trunks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trunks.png; sourceTree = "<group>"; };
+		8004C1AF1ECB33FE00BFBF26 /* vegeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vegeta.png; sourceTree = "<group>"; };
+		8004C1B61ECB399500BFBF26 /* DragonBallZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonBallZ.swift; sourceTree = "<group>"; };
 		805686891EA71868008B8554 /* IntroduceSwift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroduceSwift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8056868C1EA71868008B8554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8056868E1EA71868008B8554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,14 +117,22 @@
 		8056868B1EA71868008B8554 /* IntroduceSwift3 */ = {
 			isa = PBXGroup;
 			children = (
+				8004C1AA1ECB33FE00BFBF26 /* buu.png */,
+				8004C1AB1ECB33FE00BFBF26 /* gohan.png */,
+				8004C1AC1ECB33FE00BFBF26 /* goku.png */,
+				8004C1AD1ECB33FE00BFBF26 /* piccolo.png */,
+				8004C1AE1ECB33FE00BFBF26 /* trunks.png */,
+				8004C1AF1ECB33FE00BFBF26 /* vegeta.png */,
 				8056868C1EA71868008B8554 /* AppDelegate.swift */,
 				8056868E1EA71868008B8554 /* ViewController.swift */,
 				805686901EA71868008B8554 /* Main.storyboard */,
+				8004C1A81ECB323300BFBF26 /* DetailViewController.swift */,
 				805686961EA71868008B8554 /* Assets.xcassets */,
 				805686981EA71868008B8554 /* LaunchScreen.storyboard */,
 				8056869B1EA71868008B8554 /* Info.plist */,
 				805686931EA71868008B8554 /* IntroduceSwift3.xcdatamodeld */,
 				8083DEF11EC797A8008F718F /* SecondViewController.swift */,
+				8004C1B61ECB399500BFBF26 /* DragonBallZ.swift */,
 			);
 			path = IntroduceSwift3;
 			sourceTree = "<group>";
@@ -240,7 +264,13 @@
 			files = (
 				8056869A1EA71868008B8554 /* LaunchScreen.storyboard in Resources */,
 				805686971EA71868008B8554 /* Assets.xcassets in Resources */,
+				8004C1B51ECB33FE00BFBF26 /* vegeta.png in Resources */,
+				8004C1B11ECB33FE00BFBF26 /* gohan.png in Resources */,
+				8004C1B01ECB33FE00BFBF26 /* buu.png in Resources */,
+				8004C1B41ECB33FE00BFBF26 /* trunks.png in Resources */,
 				805686921EA71868008B8554 /* Main.storyboard in Resources */,
+				8004C1B21ECB33FE00BFBF26 /* goku.png in Resources */,
+				8004C1B31ECB33FE00BFBF26 /* piccolo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +297,8 @@
 			files = (
 				8083DEF21EC797A8008F718F /* SecondViewController.swift in Sources */,
 				805686951EA71868008B8554 /* IntroduceSwift3.xcdatamodeld in Sources */,
+				8004C1B71ECB399500BFBF26 /* DragonBallZ.swift in Sources */,
+				8004C1A91ECB323300BFBF26 /* DetailViewController.swift in Sources */,
 				8056868F1EA71868008B8554 /* ViewController.swift in Sources */,
 				8056868D1EA71868008B8554 /* AppDelegate.swift in Sources */,
 			);

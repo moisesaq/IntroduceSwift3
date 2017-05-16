@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showList(_ sender: Any) {
-        if(nameCharacter.text != ""){
+        if(nameCharacter.text == ""){
             performSegue(withIdentifier: "segue", sender: self)
         }else{
             createAlert(title: "Error", message: "Missing name character")
@@ -82,8 +82,8 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondViewController = segue.destination as! SecondViewController
-        secondViewController.charactersDragonBallZ.append(nameCharacter.text!)
+        /*let secondViewController = segue.destination as! SecondViewController
+        secondViewController.charactersDragonBallZ.append(nameCharacter.text!)*/
         
     }
 }
