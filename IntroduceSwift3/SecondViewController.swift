@@ -33,8 +33,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell{
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = charactersDragonBallZ[indexPath.row].getName()
+        /*let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = charactersDragonBallZ[indexPath.row].getName()*/
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
+        cell.myImage.image = UIImage(named: charactersDragonBallZ[indexPath.row].getImage())
+        cell.myLabel.text = charactersDragonBallZ[indexPath.row].getName()
         return(cell)
     }
     

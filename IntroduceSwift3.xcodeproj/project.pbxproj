@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8000A1AA1ED0BC8D0055153E /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8000A1A91ED0BC8D0055153E /* ViewControllerTableViewCell.swift */; };
 		8004C1A91ECB323300BFBF26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8004C1A81ECB323300BFBF26 /* DetailViewController.swift */; };
 		8004C1B01ECB33FE00BFBF26 /* buu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AA1ECB33FE00BFBF26 /* buu.png */; };
 		8004C1B11ECB33FE00BFBF26 /* gohan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8004C1AB1ECB33FE00BFBF26 /* gohan.png */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8000A1A91ED0BC8D0055153E /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		8004C1A81ECB323300BFBF26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8004C1AA1ECB33FE00BFBF26 /* buu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buu.png; sourceTree = "<group>"; };
 		8004C1AB1ECB33FE00BFBF26 /* gohan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gohan.png; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				805686931EA71868008B8554 /* IntroduceSwift3.xcdatamodeld */,
 				8083DEF11EC797A8008F718F /* SecondViewController.swift */,
 				8004C1B61ECB399500BFBF26 /* DragonBallZ.swift */,
+				8000A1A91ED0BC8D0055153E /* ViewControllerTableViewCell.swift */,
 			);
 			path = IntroduceSwift3;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				8004C1A91ECB323300BFBF26 /* DetailViewController.swift in Sources */,
 				8056868F1EA71868008B8554 /* ViewController.swift in Sources */,
 				8056868D1EA71868008B8554 /* AppDelegate.swift in Sources */,
+				8000A1AA1ED0BC8D0055153E /* ViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

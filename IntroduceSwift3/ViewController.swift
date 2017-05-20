@@ -86,5 +86,8 @@ class ViewController: UIViewController {
         secondViewController.charactersDragonBallZ.append(nameCharacter.text!)*/
         
     }
+    @IBAction func greetBuu(_ sender: Any) {
+        createAlert(title: "Hello", message: "I'm Majin Buu")
+    }
 }
 
